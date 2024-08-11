@@ -3,13 +3,14 @@ import Participantes from './Participantes';
 import Guia from "./Guia";
 import Home from "./Home"
 import Ref from "./Ref"
+import Arduino from "../assets/arduino.png"
 
 export default function Materiais() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center"
     style={{
       backgroundImage: 'linear-gradient(to left, #192F43, #6A98C3, #A8CCED, #4685BF, #17446E)', }}>
-       <div className="w-[90%] bg-white  bg-opacity-80  shadow-md p-6 mt-10">
+       <div className=" relative w-[90%] bg-white  bg-opacity-80  shadow-md p-6 mt-10 mb-10">
         <div className='flex items-center'>
               <h1 className="text-5xl font-sen mr-44 ml-4">Sight</h1>
               
@@ -23,9 +24,20 @@ export default function Materiais() {
                   </ul>
               </nav>
           </div>
-          <h1 className="text-5xl font-sen ml-8 mb-32">Sense</h1>
+          <h1 className="text-5xl font-sen ml-8 mb-20">Sense</h1>
+          
+
+            <div className='space-y-4 relative'>
+              <div className="w-[69%] bg-popup-azul stext-white p-6 rounded-md shadow-lg relative mb-32 ml-20 ">
+              <img src={Arduino} alt="" className='absolute top-1/2 left-[-40px] transform -translate-y-1/2 w-46 h-44'/>
+              <h1 className='ml-56 text-white font-paytoneone font-bold text-2xl mb-2'>Arduino Uno</h1>
+              <p className='ml-56 text-white font-roboto'>Arduino é uma plataforma que possibilita o desenvolvimento de projetos eletrônicos.</p>
+
+            </div>
           </div>
-      
+      </div>
+
     </div>
+
   )
 }

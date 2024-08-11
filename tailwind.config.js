@@ -16,6 +16,9 @@ export default {
        
 
       },
+      spacing:{
+        'ret-azul': '700px'
+      },
     },
   },
   plugins: [],
