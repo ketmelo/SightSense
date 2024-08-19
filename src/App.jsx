@@ -7,11 +7,11 @@ import Ref from './components/Ref';
 import Materiais from './components/Materiais';
 import Guia from './components/Guia';
 
-// Crie o roteador com a rota principal
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home/>,
   },
   {
     path: "/Participantes",
